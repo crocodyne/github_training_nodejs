@@ -13,7 +13,7 @@ class Api {
             .then(res => res.data)
             .catch(err => console.log('an error occurs', err))
             */
-           const data = require("./data/old-movie-data.json");
+           const data = require("../data/old-movie-data.json");
            return data;
     }
 }
