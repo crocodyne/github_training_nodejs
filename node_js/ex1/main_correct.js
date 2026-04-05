@@ -63,6 +63,10 @@ const [,...newNumber] = numbers;
 
 console.log(newNumber);
 
+const big = {foo : 'value foo', bar : 'value bar'};
+//how to gets new object small without bar property?
+const {bar, ...small} = big;
+console.log("small -> ", small);
 
 const tab = ["apple", "cherry"];
 //how to check if tab contain banana
