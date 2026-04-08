@@ -2,6 +2,18 @@
 
 Add classes | module | promesse 
 
+```javascript
+//map in ecmascript 2015
+let books = new Map();
+books.set('Umberto','Joe');
+```
+## JS DOM
+```javascript
+const newlink = document.createElement('a');
+newlink.setAttribute('tabindex', '10');
+newlink.id = 'nav';
+```
+
 ## Design pattern 
 
 -the main principles of design pattern are based on **SOLID** 
@@ -49,7 +61,17 @@ input.addEventListener('input', (e) => {
     output.innerHTML = e.target.value;
 })
 ```
-
+the **submit** evnt can send form by js without triggering submit event
+```javascript
+    element.submit();
+```
 ## URL
 localhost:8888/create_monster**?name=greg&level=2**
 the parameter after the question marks are called query parameters
+
+## Node JS
+
+for exports a module : 
+```
+export.server = s;
+```
