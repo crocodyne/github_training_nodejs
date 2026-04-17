@@ -52,6 +52,15 @@ xhr.onreadyStateChange = function() {
     //manage event with xhr.readyState && xhr.status
 };
 ```
+
+tells the post request comes by a form 
+```javascript
+xhr.open(...)
+xhr.setRequestHeader("Content-Type","Application/x-www-urlencoded");
+xhr.send('parameter1' + value1);
+```
+
+
 ## Event 
 
 The **input** event occurs whenever the value of a field changes 

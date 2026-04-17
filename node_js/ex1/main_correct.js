@@ -85,3 +85,4 @@ var dog = {name : "dog", age :3, color : "blue"};
 //how to get var name and color
 var {name, color} = dog;
 console.log(name + " with color " + color);
+
