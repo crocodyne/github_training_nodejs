@@ -85,6 +85,21 @@ for exports a module :
 export.server = s;
 ```
 
+the event loop of nodeJS 
+
+   |--->[timers]
+   |       |
+   | [pending_callback]
+   |       |
+   |     [poll]<----[incoming:connections, data, etc]
+   |       |
+   |<---[setImmediate]
+
+Timer : fn timer are calling (setInterval && setTimeout)
+Pending Callbacks : V8 run all waiting fn
+Poll: all answer by I/O (fd, socket, fs)
+SetImmediate: call this fn
+
 ## NPM
 
 list the modules : **npm ls**
