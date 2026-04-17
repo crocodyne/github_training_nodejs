@@ -81,6 +81,16 @@ the parameter after the question marks are called query parameters
 ## Node JS
 
 for exports a module : 
-```
+```javascript
 export.server = s;
 ```
+
+## NPM
+
+list the modules : **npm ls**
+list the global modules : **npm ls -g**
+know where is the node_module repository : **npm root**
+search a module : **npm search <module name>**
+uninstall a module : **npm uninstall <module name>**
+uninstall a global module : **npm uninstall -g <module name>**
+Link a global module to local workspace : **npm link <module name>**

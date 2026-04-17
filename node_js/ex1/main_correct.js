@@ -86,3 +86,14 @@ var dog = {name : "dog", age :3, color : "blue"};
 var {name, color} = dog;
 console.log(name + " with color " + color);
 
+//this results of this code is 
+// 10 10 10 10 ...
+//how to fix that 
+for(var i = 0; i< 10; i++) {
+    (function(i) {
+    setTimeout(function() {
+        console.log(i);
+    }, 1000)
+    })(i);
+}
+console.log('End');
