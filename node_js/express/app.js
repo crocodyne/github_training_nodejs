@@ -3,7 +3,7 @@ const morgan = require('morgan')
 
 const app = express();
 const port = 3000;
-
+console.log(process.env)
 const logger = (req, res, next) => {
     console.log("req -> " , req);
     next()
